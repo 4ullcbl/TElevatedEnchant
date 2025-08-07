@@ -1,0 +1,4 @@
+ru\trident\elevatedEnchants\util\EnchantUtil.class
+ru\trident\elevatedEnchants\TElevatedEnchants.class
+ru\trident\elevatedEnchants\command\ElevateEnchantmentCommand.class
+ru\trident\elevatedEnchants\listener\PrepareAnvil.class

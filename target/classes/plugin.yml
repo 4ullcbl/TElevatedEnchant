@@ -1,0 +1,14 @@
+name: TElevatedEnchants
+version: '1.0'
+main: ru.trident.elevatedEnchants.TElevatedEnchants
+api-version: '1.18'
+authors: [ chipsonsky ]
+description: builded by TridentProduct
+website: trident.su
+
+commands:
+  elevate-enchant:
+    permission: trident.elevate
+    aliases:
+      - ee
+      - tee

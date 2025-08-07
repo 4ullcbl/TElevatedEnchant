@@ -1,0 +1,17 @@
+#
+#    ╔═══════════════════════
+#    ║ Name: TElevatedEnchants
+#    ║ Author: chipsonsky
+#    ║ Studio: TridentProduct
+#    ║ Официальная версия✔
+#    ╚═══════════════════════
+#
+
+# Увеличение стоймости
+enable_scaling: true
+
+# Сколько угодно чар
+enchantments:
+  efficiency: 7
+  sharpness: 8
+
