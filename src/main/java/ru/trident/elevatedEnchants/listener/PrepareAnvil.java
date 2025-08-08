@@ -17,7 +17,6 @@ import java.util.Map;
 
 public class PrepareAnvil implements Listener
 {
-
     private final TElevatedEnchants plugin;
     private final EnchantUtil enchantUtil;
 
@@ -26,7 +25,6 @@ public class PrepareAnvil implements Listener
         this.plugin = plugin;
         this.enchantUtil = enchantUtil;
     }
-
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onPrepare(PrepareAnvilEvent event)
@@ -82,12 +80,12 @@ public class PrepareAnvil implements Listener
         }
 
         for (Map.Entry<Enchantment, Integer> entry : rightEnchants.entrySet()) {
-            Enchantment ench = entry.getKey();
+            final Enchantment ench = entry.getKey();
             if (leftEnchants.containsKey(ench)) continue;
 
-            int rightLevel = entry.getValue();
-            int maxAllowed = this.plugin.getMaxLevels().getOrDefault(ench, ench.getMaxLevel());
-            int newLevel = Math.min(rightLevel, maxAllowed);
+            final int rightLevel = entry.getValue();
+            final int maxAllowed = this.plugin.getMaxLevels().getOrDefault(ench, ench.getMaxLevel());
+            final int newLevel = Math.min(rightLevel, maxAllowed);
 
             this.enchantUtil.applyEnchant(result, ench, newLevel);
             extraCost += (newLevel * 2);
@@ -98,7 +96,7 @@ public class PrepareAnvil implements Listener
             event.setResult(result);
 
             if (this.plugin.isEnableScaling()) {
-                int newRepairCost = Math.min(event.getInventory().getRepairCost() + extraCost, 39);
+                int newRepairCost = Math.min(event.getInventory().getRepairCost() + extraCost, this.plugin.getMaxScal());
                 event.getInventory().setRepairCost(newRepairCost);
             }
 

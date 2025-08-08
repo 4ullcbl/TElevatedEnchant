@@ -15,6 +15,7 @@ public final class TElevatedEnchants extends JavaPlugin
 {
     private final Map<Enchantment, Integer> maxLevels = new HashMap<>();
     private boolean enableScaling = false;
+    private int maxScal = 39;
     private EnchantUtil enchantUtil;
     private long startTime;
 
@@ -49,6 +50,7 @@ public final class TElevatedEnchants extends JavaPlugin
 
         final FileConfiguration config = this.getConfig();
         enableScaling = config.getBoolean("enable_scaling", false);
+        maxScal = config.getInt("max_scaling");
 
         if (!config.contains("enchantments")) return;
 
@@ -77,8 +79,8 @@ public final class TElevatedEnchants extends JavaPlugin
         return enableScaling;
     }
 
-    public EnchantUtil getEnchantUtil()
+    public int getMaxScal()
     {
-        return enchantUtil;
+        return maxScal;
     }
 }
