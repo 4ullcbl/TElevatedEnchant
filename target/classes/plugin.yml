@@ -1,7 +1,7 @@
 name: TElevatedEnchants
-version: '1.0'
+version: '1.1'
 main: ru.trident.elevatedEnchants.TElevatedEnchants
-api-version: '1.18'
+api-version: '1.16'
 authors: [ chipsonsky ]
 description: builded by TridentProduct
 website: trident.su

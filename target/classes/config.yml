@@ -9,9 +9,41 @@
 
 # Увеличение стоймости
 enable_scaling: true
+# Максимальная стоймость
+max_scaling: 39
 
 # Сколько угодно чар
 enchantments:
+  protection: 5
+  fire_protection: 5
+  blast_protection: 5
+  projectile_protection: 5
+  feather_falling: 5
+  thorns: 3
+  sharpness: 7
+
+  smite: 7
+  bane_of_arthropods: 7
+  knockback: 2
+  fire_aspect: 2
+  looting: 5
+  sweeping: 3
+  depth_strider: 1
+
+  frost_walker: 4
+  mending: 1
+  piercing: 3
   efficiency: 7
-  sharpness: 8
+  silk_touch: 1
+  fortune: 3
+  unbreaking: 5
+  multishot: 3
+
+  quick_charge: 4
+  loyalty: 3
+  riptide: 3
+  channeling: 1
+  impaling: 5
+  soul_speed: 3
+  swift_sneak: 3
 
